@@ -20,6 +20,7 @@
 
   document.getElementById("contact").addEventListener("click", function(){
     document.querySelector(".mask").classList.add("is-visible");
+    document.querySelector(".form-mask").classList.add("open");
     document.querySelector(".contact-form-mask").classList.add("is-visible");
   })
   document.getElementById("contact-main").addEventListener("click", function(){
@@ -28,8 +29,11 @@
   })
 
   document.getElementById("close").addEventListener("click", function(){
+    document.querySelector(".form-mask").classList.remove("open");
     document.querySelector(".mask").classList.remove("is-visible");
     document.querySelector(".contact-form-mask").classList.remove("is-visible");
+    
+
   })
 document.getElementById("hamburger").addEventListener("click", function(){
   console.log("hi");
